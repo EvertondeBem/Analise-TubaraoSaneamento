@@ -20,7 +20,7 @@ const handleAnalysis = () => {
   const ntuValue = parseFloat(ntu);
 
   if (phValue < 7.00 || phValue > 7.30 || colorValue < 0 || colorValue > 15 || fluorideValue < 0.70 || fluorideValue > 1.00 || ntuValue < 0.0 || ntuValue > 5.0) {
-    const resultMessage = `Realizado análise físico-químico da amostra, e o resultado obtido está fora dos parâmetros da qualidade de água potável que atende ao padrão de potabilidade estabelecido pela Portaria GM/MS nº888, de 04 de maio de 2021 e Portaria de nº 421 de 13/05/2016 da Secretaria do Estado da Saúde de SC.\n\nProtocolo: ${protocolNumber}\nPH: ${ph}\nCor: ${color}\nFlúor: ${fluoride}\nNTU: ${ntu}\n\nOperador: ${operator}\nObs: `;
+    const resultMessage = `Realizado análise físico-químico da amostra, e o resultado obtido está fora dos parâmetros da qualidade de água potável que atende ao padrão de potabilidade estabelecido pela Portaria GM/MS nº888, de 04 de maio de 2021 e Portaria de nº 421 de 13/05/2016 da Secretaria do Estado da Saúde de SC.\n\nProtocolo: ${protocolNumber}\nPH: ${ph}\nCor: ${color}\nFlúor: ${fluoride}\nNTU: ${ntu}\n\nOperador: ${operator}\nObs: Solicitamos fazer descarga de rede ou cavalete e uma nova análise.`;
     setAnalysisResult(resultMessage);
   } else {
     const resultMessage = `Realizado análise físico-químico da amostra, e o resultado obtido está dentro dos parâmetros da qualidade de água potável que atende ao padrão de potabilidade estabelecido pela Portaria GM/MS nº888, de 04 de maio de 2021 e Portaria de nº 421 de 13/05/2016 da Secretaria do Estado da Saúde de SC.\n\nProtocolo: ${protocolNumber}\nPH: ${ph}\nCor: ${color}\nFlúor: ${fluoride}\nNTU: ${ntu}\n\nOperador: ${operator}`;
