@@ -54,7 +54,7 @@ const handleAnalysis = () => {
 
         <FormControl mb={2}>
           <FormLabel>Número do Protocolo</FormLabel>
-          <Input type="text" value={protocolNumber} onChange={(e) => setProtocolNumber(e.target.value)} />
+          <Input type="number" value={protocolNumber} onChange={(e) => setProtocolNumber(e.target.value)} />
           <FormHelperText>Informe o número do protocolo.</FormHelperText>
         </FormControl>
         
