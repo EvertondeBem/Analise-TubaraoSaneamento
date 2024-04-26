@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Box, Heading, Text, Button, Input, FormControl, FormLabel, FormHelperText, Flex, Image } from '@chakra-ui/react';
 import DrawerAnalysis from './DrawerAnalysis';
 import DrawerHistory from './DrawerHistory';
