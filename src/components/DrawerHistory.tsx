@@ -39,7 +39,7 @@ const DrawerHistory: React.FC<DrawerHistoryProps> = ({ isOpen, onClose, analysis
         </DrawerContent>
       </DrawerOverlay>
 
-      <DrawerAnalysis isOpen={!!selectedAnalysis} onClose={() => setSelectedAnalysis(null)} analysisResult={selectedAnalysis} />
+      {selectedAnalysis && <DrawerAnalysis isOpen={true} onClose={() => setSelectedAnalysis(null)} analysisResult={selectedAnalysis} />}
     </Drawer>
   );
 };
