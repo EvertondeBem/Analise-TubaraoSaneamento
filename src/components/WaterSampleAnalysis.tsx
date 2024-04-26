@@ -49,7 +49,7 @@ const handleAnalysis = () => {
         width="100%"
         position="relative"
       >
-        <Image src="../src/assets/logo1.png" alt="Logo-TBSSA" position="relative" top={0} left={0} width="100%" zIndex={-1} />
+        <Image src="../assets/logo1.png" alt="Logo-TBSSA" position="relative" top={0} left={0} width="100%" zIndex={-1} />
 
         <Heading size="sm" mb={2}>Análise de Amostra de Água</Heading>
         <Text mb={2}>Insira detalhes da amostra e clique em Analisar.</Text>
