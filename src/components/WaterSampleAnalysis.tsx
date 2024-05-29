@@ -24,8 +24,8 @@ const WaterSampleAnalysis = () => {
     let resultMessage = '';
 
     if (
-      phValue < 7.00 ||
-      phValue > 7.30 ||
+      phValue < 6.00 ||
+      phValue > 9.00 ||
       colorValue < 0 ||
       colorValue > 15 ||
       fluorideValue < 0.70 ||
